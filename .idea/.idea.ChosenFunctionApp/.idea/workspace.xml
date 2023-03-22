@@ -4,7 +4,11 @@
     <projectFile profileName="ChosenFunctionApp">ChosenFunctionApp/ChosenFunctionApp.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8d6ca65-6335-4229-bb92-ba4ec3c0984f" name="Changes" comment="First Commit" />
+    <list default="true" id="c8d6ca65-6335-4229-bb92-ba4ec3c0984f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ChosenFunctionApp/FirstFunction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChosenFunctionApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChosenFunctionApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChosenFunctionApp/ChosenFunctionApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ChosenFunctionApp/ChosenFunctionApp.csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,17 +19,21 @@
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2NMRsisrxKvkW1xrX8Ij8JX3iRq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TODO_SCOPE": "All Places",
     "WebServerToolWindowFactoryState": "false",
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors",
     "vue.rearranger.settings.migration": "true"
@@ -38,7 +46,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Azure Functions host.ChosenFunctionApp">
+  <component name="RunManager" selected=".NET Launch Settings Profile.ChosenFunctionApp">
     <configuration name="ChosenFunctionApp" type="AzureFunctionsHost" factoryName="Azure Functions host">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -51,7 +59,7 @@
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="RunnableProjectKind(name=None)" />
+      <option name="PROJECT_KIND" value="RunnableProjectKind(name=RunnableProjectKind(name=None))" />
       <option name="PROJECT_TFM" value="" />
       <option name="FUNCTION_NAMES" value="" />
       <method v="2">
@@ -82,7 +90,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679472172153</updated>
-      <workItem from="1679472173823" duration="761000" />
+      <workItem from="1679472173823" duration="1333000" />
+      <workItem from="1679481007062" duration="13000" />
+      <workItem from="1679481033229" duration="265000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1679472424278</created>
@@ -91,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679472424278</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Second Commit">
+      <created>1679473064413</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679473064413</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,8 +117,10 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="First Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
+    <MESSAGE value="Second Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second Commit" />
   </component>
 </project>
