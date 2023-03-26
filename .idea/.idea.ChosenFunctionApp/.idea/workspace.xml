@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c8d6ca65-6335-4229-bb92-ba4ec3c0984f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ChosenFunctionApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChosenFunctionApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChosenFunctionApp/FirstFunction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChosenFunctionApp/FirstFunction.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,7 @@
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="RunnableProjectKind(name=RunnableProjectKind(name=RunnableProjectKind(name=None)))" />
+      <option name="PROJECT_KIND" value="RunnableProjectKind(name=RunnableProjectKind(name=RunnableProjectKind(name=RunnableProjectKind(name=RunnableProjectKind(name=None)))))" />
       <option name="PROJECT_TFM" value="" />
       <option name="FUNCTION_NAMES" value="" />
       <method v="2">
@@ -91,6 +92,9 @@
       <workItem from="1679472173823" duration="1333000" />
       <workItem from="1679481007062" duration="13000" />
       <workItem from="1679481033229" duration="649000" />
+      <workItem from="1679481981230" duration="2161000" />
+      <workItem from="1679814306808" duration="11000" />
+      <workItem from="1679814331023" duration="714000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1679472424278</created>
@@ -113,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679481509735</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ThirdCommit">
+      <created>1679482806969</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679482806969</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +138,7 @@
     <MESSAGE value="First Commit" />
     <MESSAGE value="Second Commit" />
     <MESSAGE value="Added my first function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added my first function" />
+    <MESSAGE value="ThirdCommit" />
+    <option name="LAST_COMMIT_MESSAGE" value="ThirdCommit" />
   </component>
 </project>
