@@ -1,40 +1,47 @@
+using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Threading.Tasks;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
+using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
-using System.Net;
-using System.Net.Http;
-using System.Collections.Generic;
 
 namespace ChosenFunctionApp;
 
 public static class DatabaseFunction
 {
     [FunctionName("DatabaseFunction")]
-    public static async Task<HttpResponseMessage> RunAsync(
-        [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequestMessage req)
+    public static async Task<string> RunAsync(
+        [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req)
     {
-        // Replace with the URL of your API and the name of the table
+        // Replace with your connection string
+        string connectionString = "Server=tcp:xchosen.database.windows.net,1433;Initial Catalog=blazorDatabase;Persist Security Info=False;User ID=CloudSA326ab916;Password=Matabase@1324;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+
+        // Replace with your table name and query
         string tableName = "MyTable";
-        string apiUrl = $"https://xchosen.database.windows.net/entries?table={tableName}&top=5";
+        string query = $"SELECT * FROM {tableName}";
 
-        // Make the HTTP GET request to the API
-        using (var client = new HttpClient())
+        // Connect to the database and execute the query
+        using (var connection = new SqlConnection(connectionString))
         {
-            var response = await client.GetAsync(apiUrl);
-            if (response.IsSuccessStatusCode)
+            connection.Open();
+            using (var command = new SqlCommand(query, connection))
             {
-                // Parse the response and extract the data
-                var content = await response.Content.ReadAsStringAsync();
-                var data = JsonConvert.DeserializeObject<List<Entry>>(content);
+                using (var reader = await command.ExecuteReaderAsync())
+                {
+                    var data = new List<Entry>();
+                    while (await reader.ReadAsync())
+                    {
+                        data.Add(new Entry
+                        {
+                            Id = reader.GetInt32(0),
+                            Name = reader.GetString(1)
+                        });
+                    }
 
-                // Return the data as a JSON response
-                return req.CreateResponse(HttpStatusCode.OK, data);
-            }
-            else
-            {
-                // Return an error response if the API call failed
-                return req.CreateErrorResponse(response.StatusCode, response.ReasonPhrase);
+                    // Return the data as a JSON response
+                    return JsonConvert.SerializeObject(data);
+                }
             }
         }
     }
@@ -44,5 +51,5 @@ public static class DatabaseFunction
         public int Id { get; set; }
         public string Name { get; set; }
     }
-    
 }
+    

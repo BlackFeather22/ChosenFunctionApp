@@ -4,7 +4,9 @@
     <projectFile profileName="ChosenFunctionApp">ChosenFunctionApp/ChosenFunctionApp.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8d6ca65-6335-4229-bb92-ba4ec3c0984f" name="Changes" comment="Added a function that connects to the Database and retireve its entries and returns it to the calling application" />
+    <list default="true" id="c8d6ca65-6335-4229-bb92-ba4ec3c0984f" name="Changes" comment="Seperated the Database function into a seperate file for more organizational purposes.">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChosenFunctionApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChosenFunctionApp/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +47,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Azure Functions host.ChosenFunctionApp">
+  <component name="RunManager" selected="Azure Functions host.DatabaseFunction (ChosenFunctionApp)">
     <configuration name="ChosenFunctionApp" type="AzureFunctionsHost" factoryName="Azure Functions host">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -65,6 +67,44 @@
         <option name="BuildFunctionsProject" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DatabaseFunction (ChosenFunctionApp)" type="AzureFunctionsHost" factoryName="Azure Functions host" temporary="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/ChosenFunctionApp/bin/Debug/net6.0/ChosenFunctionApp.dll" />
+      <option name="PROGRAM_PARAMETERS" value="host start --pause-on-error" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ChosenFunctionApp/bin/Debug/net6.0" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ChosenFunctionApp/ChosenFunctionApp.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="RunnableProjectKind(name=AzureFunctions)" />
+      <option name="PROJECT_TFM" value="net6.0" />
+      <option name="FUNCTION_NAMES" value="DatabaseFunction" />
+      <method v="2">
+        <option name="BuildFunctionsProject" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AzureFunctionsHost" factoryName="Azure Functions host">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/ChosenFunctionApp/bin/Debug/net6.0/ChosenFunctionApp.dll" />
+      <option name="PROGRAM_PARAMETERS" value="host start --pause-on-error" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ChosenFunctionApp/bin/Debug/net6.0" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ChosenFunctionApp/ChosenFunctionApp.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="RunnableProjectKind(name=AzureFunctions)" />
+      <option name="PROJECT_TFM" value="net6.0" />
+      <option name="FUNCTION_NAMES" value="DatabaseFunction" />
+      <method v="2">
+        <option name="BuildFunctionsProject" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ChosenFunctionApp" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ChosenFunctionApp/ChosenFunctionApp.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
@@ -80,6 +120,11 @@
         <option name="Build" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Azure Functions host.DatabaseFunction (ChosenFunctionApp)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -94,7 +139,7 @@
       <workItem from="1679481033229" duration="649000" />
       <workItem from="1679481981230" duration="2161000" />
       <workItem from="1679814306808" duration="11000" />
-      <workItem from="1679814331023" duration="1119000" />
+      <workItem from="1679814331023" duration="3535000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1679472424278</created>
@@ -131,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679818281145</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Seperated the Database function into a seperate file for more organizational purposes.">
+      <created>1679818917486</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679818917486</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +199,7 @@
     <MESSAGE value="Added my first function" />
     <MESSAGE value="ThirdCommit" />
     <MESSAGE value="Added a function that connects to the Database and retireve its entries and returns it to the calling application" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a function that connects to the Database and retireve its entries and returns it to the calling application" />
+    <MESSAGE value="Seperated the Database function into a seperate file for more organizational purposes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Seperated the Database function into a seperate file for more organizational purposes." />
   </component>
 </project>
